@@ -1,0 +1,55 @@
+---
+title: "Shiny Workflows: Tutorial 2"
+output: 
+  html_document:
+    toc: false
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Pre-readings
+
+- [Chapter 3: Shiny](https://b-klaver.github.io/shinyWorkflows/shiny.html)
+
+## Assignment
+
+### 1) Build a basic shiny app using the PHMS data in your practice project
+
+You can find the data in your local PHMRSapp clone. The data should be here: `inst/ext/data_list.RDS`.
+
+#### 1a) Use package-app structure
+
+- It should include all of the components included in the readings (ie. `R/`, `inst/`, `www/`, `DESCRIPTION`)
+- You should be trying to use functions (ie. for plotting), as well as have an `app.R` script and a function that includes your UI, server, and `shiny::shinyApp(ui = ui, server = server)`.
+
+#### 1b) Continue to use Git
+
+- Practice push, pull, commit, and branching/merge if you feel adventurous!
+
+#### 1d) Create a sidebar
+
+- the sidebar should include a filter for geography, for now let's keep this to BC and the 5 Health Authorities (6 options total).
+- Below the filter let's have a button that's called "Generate Profile"
+
+#### 1c) Create tabs
+
+- There should be two tabs that are named 'Summary View' and 'Changes over time'
+- The "Summary View" tab should have a plot of population age distribution in the selected geographical region in 2020 by Males and Females and age group (Y axis age group, X axis population total)
+- The "Changes over time" should be the current and projected population proportoins by age group in the selected geographical region (Y axis % of population, X axis Year)
+
+These plots are in the [PHMRSapp](https://bccdc.shinyapps.io/YjZbhQlNNlhU/) under *Demographics > Population projection*. You don't need to use highcharter to create them for now.
+
+#### 1d) Connect everything in the server
+
+- Update both plots based on the selected geographical region when the "Generate Profile" button is pressed.
+
+### 2) Readings
+
+- [Chapter 4: bslib](https://b-klaver.github.io/shinyWorkflows/bslib.html)
