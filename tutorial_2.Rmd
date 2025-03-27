@@ -33,12 +33,12 @@ You can find the data in your local PHMRSapp clone. The data should be here: `in
 
 - Practice push, pull, commit, and branching/merge if you feel adventurous!
 
-#### 1d) Create a sidebar
+#### 1c) Create a sidebar
 
 - the sidebar should include a filter for geography, for now let's keep this to BC and the 5 Health Authorities (6 options total).
 - Below the filter let's have a button that's called "Generate Profile"
 
-#### 1c) Create tabs
+#### 1d) Create tabs
 
 - There should be two tabs that are named 'Summary View' and 'Changes over time'
 - The "Summary View" tab should have a plot of population age distribution in the selected geographical region in 2020 by Males and Females and age group (Y axis age group, X axis population total)
@@ -46,7 +46,7 @@ You can find the data in your local PHMRSapp clone. The data should be here: `in
 
 These plots are in the [PHMRSapp](https://bccdc.shinyapps.io/YjZbhQlNNlhU/) under *Demographics > Population projection*. You don't need to use highcharter to create them for now but at minimum try to use ggplot and convert to plotly. If you are struggling you can look at Joy's code in your PHMRSapp clone.
 
-#### 1d) Connect everything in the server
+#### 1e) Connect everything in the server
 
 - Update both plots based on the selected geographical region when the "Generate Profile" button is pressed.
 
