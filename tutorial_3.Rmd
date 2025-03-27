@@ -1,0 +1,67 @@
+---
+title: "Shiny Workflows: Tutorial 3"
+output: 
+  html_document:
+    toc: false
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Pre-readings
+
+- [Chapter 4: bslib](https://b-klaver.github.io/shinyWorkflows/bslib.html)
+
+## Assignment
+
+### 1) Create a branch from your current shiny app project to work on a bslib version
+
+Using Git create a branch for a bslib version of your app and push this to Gitlab
+
+### 2) Building off of your previous shiny app, convert it to a bslib app
+
+#### 2a) Change to using `page_navbar()`
+
+Following the advanced example in the readings change your app to use `page_navbar()`, `nav_panel()`, and `card()`.
+
+- Change the top level tabs to be "About" and "Explore Profiles" (2 tabs total)
+
+#### 2b) Update your sidebar
+
+- Make the sidebar only appear on your "Explore profiles" tab (ie. it's minimized on the "About" tab)
+- Create a Geography Level dropdown list (should include BC, HA, and HSDA options)
+- Create a Geography selection dropdown list that updates to include BC, the HAs, or the HSDAs, depending on the level selected.
+- Keep your generate profile button
+
+#### 2c) Move your old tabs into a tabbed card
+
+- Put your previous tabs for 'Summary View' and 'Changes over time' into a card that has tabs
+- Keep your plots the same, if you haven't changed them to highcharter or plotly try doing so now
+- Add a tooltip to each tab that gives a simple description of what that tab explains
+
+#### 2d) Add a third tab
+
+- Add a third tab that will have value boxes 
+- Create an input in this tab of the card that allows you to multi-select metrics
+- The metrics available are up to you, make them make sense with what is available in the data
+- Add a tooltip for this tab as well
+
+#### 2e) Connect everything in the server
+
+- Update both plots and value boxes based on the selected geographical region when the "Generate Profile" button is pressed.
+- Value boxes should only appear when the corresponding metric is selected
+- Remember to include the sidebar reactivity here as well
+
+### 3) Merge your branch
+
+Merge your bslib version with your shiny version using Git and push to Gitlab
+
+### 4) Readings
+
+- [Chapter 5: Modularization](https://b-klaver.github.io/shinyWorkflows/modularization.html)
