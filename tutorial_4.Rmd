@@ -1,0 +1,58 @@
+---
+title: "Shiny Workflows: Tutorial 3"
+output: 
+  html_document:
+    toc: false
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Pre-readings
+
+- [Chapter 5: Modularization](https://b-klaver.github.io/shinyWorkflows/modularization.html)
+
+## Assignment
+
+### 1) Create a branch from your current shiny app project to work on a modularized version
+
+Using Git create a branch for a modularized version of your app and push this to Gitlab
+
+### 2) Work with the modules in chapter 5. 
+
+#### 2a) Convert the [CSV download module example]() to better resemble the format discussed in this chapter
+
+Use the example for the [dropdown module](https://b-klaver.github.io/shinyWorkflows/modularization.html#csv-download-module) that was converted from the format in PHMRSapp to the standard format (ie. `shiny::NS(id, "ui_name")`).
+
+#### 2b) Improve the [Domain select module](https://b-klaver.github.io/shinyWorkflows/modularization.html#domain-select-module) by using the [dropdown module](https://b-klaver.github.io/shinyWorkflows/modularization.html#dropdown-module)
+
+This looks like a good opportunity to do [nested modules](https://b-klaver.github.io/shinyWorkflows/modularization.html#modules-inside-of-modules). 
+
+- Try using the [dropdown module](https://b-klaver.github.io/shinyWorkflows/modularization.html#dropdown-module) to improve this domain select module by using the nesting approach.   
+- Convert to the mastering shiny format (ie. `shiny::NS(id, "ui_name")`, as well as using a returned list in the server).    
+- Consider adding additional UI and server function arguments for the dropdown lists for the dropdown module.
+
+### 3) Building off of your previous shiny app, convert UI/server pairings into modules
+
+#### 3a) Use your `dropdown_module`
+
+For the two dropdown menus in your sidebar, implement a dropdown module that you can use for both of them (ie. one generalized module).
+
+#### 3b) Nest your `dropdown_module`
+
+We have two dropdown menus and a generate button.. seems like a good opportunity to build up a larger module from these small pieces. Try it out!
+
+#### 3c) Create plot functions and a `plot_module`
+
+If you haven't yet, create functions for your plots and create a simple plot module to output them.
+
+#### 3d) Find any other UI/server pairs that can be converted to modules
+
+If any more modularization opportunities exist in your app (ie. value boxes, etc) implement them with your knew knowledge!
+
