@@ -1,5 +1,5 @@
 ---
-title: "Shiny Workflows: Tutorial 3"
+title: "Shiny Workflows: Tutorial 4"
 output: 
   html_document:
     toc: false
@@ -26,7 +26,7 @@ Using Git create a branch for a modularized version of your app and push this to
 
 ### 2) Work with the modules in chapter 5. 
 
-#### 2a) Convert the [CSV download module example]() to better resemble the format discussed in this chapter
+#### 2a) Convert the [CSV download module example](https://b-klaver.github.io/shinyWorkflows/modularization.html#csv-download-module) to better resemble the format discussed in this chapter
 
 Use the example for the [dropdown module](https://b-klaver.github.io/shinyWorkflows/modularization.html#csv-download-module) that was converted from the format in PHMRSapp to the standard format (ie. `shiny::NS(id, "ui_name")`).
 
@@ -36,7 +36,7 @@ This looks like a good opportunity to do [nested modules](https://b-klaver.githu
 
 - Try using the [dropdown module](https://b-klaver.github.io/shinyWorkflows/modularization.html#dropdown-module) to improve this domain select module by using the nesting approach.   
 - Convert to the mastering shiny format (ie. `shiny::NS(id, "ui_name")`, as well as using a returned list in the server).    
-- Consider adding additional UI and server function arguments for the dropdown lists for the dropdown module.
+- Consider adding additional UI and server function arguments for the dropdown lists for the dropdown module to make them more generalizable.
 
 ### 3) Building off of your previous shiny app, convert UI/server pairings into modules
 
