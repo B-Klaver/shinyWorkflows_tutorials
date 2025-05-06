@@ -40,9 +40,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Create two tabs, one will be for the BC and HA level estimates and the other will be for granular sex and age group counts.   
 - The first tab should include a line graph that shows a trend of counts over time, filtered by the geography.   
-- The second tab should have table that includes the data by sex and age group for the selected geography.   
-
-Try to use ggplot and convert to plotly for the graph.
+- The second tab should have table that includes the data by sex and age group for the selected geography.  
+- Try to use ggplot and convert to plotly for the graph.
 
 #### 1e) Connect everything in the server
 
