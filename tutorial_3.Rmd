@@ -30,33 +30,35 @@ Using Git create a branch for a bslib version of your app and push this to Gitla
 
 Following the advanced example in the readings change your app to use `page_navbar()`, `nav_panel()`, and `card()`.
 
-- Change the top level tabs to be "About" and "Explore Profiles" (2 tabs total)
+- Change the top level tabs so that the first one is an introduction and the second is the data exploration (2 tabs total)
 
 #### 2b) Update your sidebar
 
-- Make the sidebar only appear on your "Explore profiles" tab (ie. it's minimized on the "About" tab)
-- Create a Geography Level dropdown list (should include BC, HA, and HSDA options)
-- Create a Geography selection dropdown list that updates to include BC, the HAs, or the HSDAs, depending on the level selected.
-- Keep your generate profile button
+- Make the sidebar only appear on your second data exploration tab (ie. it's minimized on the introduction tab)
+- Create a Geography Level dropdown list (should include BC and HA option)
+- Create a Geography selection dropdown list that only appears when HA is selected and includes all 5 HAs.
+- Remove the button
 
-#### 2c) Move your old tabs into a tabbed card
+#### 2c) Introduction tab
 
-- Put your previous tabs for 'Summary View' and 'Changes over time' into a card that has tabs
-- Keep your plots the same, if you haven't changed them to highcharter or plotly try doing so now
-- Add a tooltip to each tab that gives a simple description of what that tab explains
+- Include a simple text blurb, play around with HTML, try adding in links or photos.
 
-#### 2d) Add a third tab
+#### 2d) Data exploration tab
 
-- Add a third tab that will have value boxes 
-- Create an input in this tab of the card that allows you to multi-select metrics
-- The metrics available are up to you, make them make sense with what is available in the data
-- Add a tooltip for this tab as well
+- Put your previous tabs for the plot and table into two side by side cards
+- Make both cards have two tabs, one tab for a plot the other for a table
+- The card for age and sex should have a filter in it that lets you filter for the year
+- Keep your plot for geography the same, if you haven't changed it to highcharter or plotly try doing so now
+- The plot for age and sex can be a bar chart with age group on the X axis, and counts on the Y axis, with bars for male and female side by side.
+- Add a tooltip to each tab that gives a simple description of what that tab is showing.
+- Add a button under each of the tables that allows you to download a csv of the data that's used for that specific table.
 
 #### 2e) Connect everything in the server
 
-- Update both plots and value boxes based on the selected geographical region when the "Generate Profile" button is pressed.
-- Value boxes should only appear when the corresponding metric is selected
-- Remember to include the sidebar reactivity here as well
+- Update both plots and tables based on the selected geographical region when it is selected.
+- Update the age and sex plot and table based on the year when it is selected.
+- Download the corresponding data when the download data button is pressed
+- Remember to include the sidebar reactivity here as well (ie. minimized on the first page)
 
 ### 3) Merge your branch
 
