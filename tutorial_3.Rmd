@@ -48,7 +48,7 @@ Following the advanced example in the readings change your app to use `page_navb
 - Put your previous tabs for the plot and table into two side by side cards
 - Make both cards have two tabs, one tab for a plot the other for a table
 - For the first card keep your plot for geography the same, if you haven't changed it to highcharter or plotly try doing so now. The table tab should have the data that is presented in the plot.
-- The card for age and sex should have a filter in it that lets you filter for the year. The plot can be a bar chart with age group on the X axis, and counts on the Y axis, with bars for male and female side by side. The table should show the data shown in the plot.
+- The card for age and sex should have a filter in it that lets you filter for the year (should be on both the plot and table tab). The plot can be a bar chart with age group on the X axis, and counts on the Y axis, with bars for male and female side by side. The table should show the data shown in the plot.
 - Add a tooltip to each card tab that gives a simple description of what that tab is showing.
 - Add a button under each of the tables that allows you to download a csv of the data that's used for that specific table.
 
