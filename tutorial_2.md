@@ -1,0 +1,51 @@
+Shiny Workflows: Tutorial 2
+================
+
+## Pre-readings
+
+- [Chapter 3:
+  Shiny](https://b-klaver.github.io/shinyWorkflows/shiny.html)
+
+## Assignment
+
+### 1) Build a basic shiny app using the dummy dataset in this repo (see `data.Rds`) located in the data folder of this repo.
+
+#### 1a) Use package-app structure
+
+- It should include all of the components included in the readings (ie.
+  `R/`, `inst/`, `www/`, `DESCRIPTION`)
+- You should be trying to use functions (ie. for plotting), as well as
+  have an `app.R` script and a function that includes your UI, server,
+  and `shiny::shinyApp(ui = ui, server = server)` call.
+
+#### 1b) Continue to use Git
+
+- Practice push, pull, commit, and branching/merge if you feel
+  adventurous!
+
+#### 1c) Create a sidebar
+
+- the sidebar should include a filter for geography, for now let’s keep
+  this to BC and the 5 Health Authorities (6 options total).  
+- Below the filter let’s have a button that updates the content once
+  clicked.
+
+#### 1d) Create tabs
+
+- Create two tabs, one will be for the BC and HA level estimates and the
+  other will be for granular sex and age group counts.  
+- The first tab should include a line graph that shows a trend of counts
+  over time, filtered by the geography.  
+- The second tab should have table that includes the data by sex and age
+  group for the selected geography.  
+- Try to use ggplot and convert to plotly for the graph.
+
+#### 1e) Connect everything in the server
+
+- Update the plot and the table based on the selected geographical
+  region when the button is pressed.
+
+### 2) Readings
+
+- [Chapter 4:
+  bslib](https://b-klaver.github.io/shinyWorkflows/bslib.html)

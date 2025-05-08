@@ -1,13 +1,7 @@
 ---
 title: "Shiny Workflows: Tutorial 2"
 output: 
-  html_document:
-    toc: false
-    toc_depth: 3
-    toc_float:
-      collapsed: false
-      smooth_scroll: false
-    code_folding: hide
+  github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Assignment
 
-### 1) Build a basic shiny app using the dummy dataset in this repo (see `data.Rds`)
+### 1) Build a basic shiny app using the dummy dataset in this repo (see `data.Rds`) located in the data folder of this repo.
 
 #### 1a) Use package-app structure
 

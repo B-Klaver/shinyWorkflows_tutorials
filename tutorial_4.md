@@ -1,0 +1,66 @@
+Shiny Workflows: Tutorial 4
+================
+
+## Pre-readings
+
+- [Chapter 5:
+  Modularization](https://b-klaver.github.io/shinyWorkflows/modularization.html)
+
+## Assignment
+
+### 1) Create a branch from your current shiny app project to work on a modularized version
+
+Using Git create a branch for a modularized version of your app and push
+this to Gitlab
+
+### 2) Work with the modules in chapter 5.
+
+#### 2a) Convert the [CSV download module example](https://b-klaver.github.io/shinyWorkflows/modularization.html#csv-download-module) to better resemble the format discussed in this chapter
+
+Follow the example for the [dropdown
+module](https://b-klaver.github.io/shinyWorkflows/modularization.html#csv-download-module)
+that was converted from the old format to the standard format (ie.
+`shiny::NS(id, "ui_name")`).
+
+#### 2b) Improve the [Domain select module](https://b-klaver.github.io/shinyWorkflows/modularization.html#domain-select-module) by using the [dropdown module](https://b-klaver.github.io/shinyWorkflows/modularization.html#dropdown-module)
+
+This looks like a good opportunity to do [nested
+modules](https://b-klaver.github.io/shinyWorkflows/modularization.html#modules-inside-of-modules).
+
+- Try using the [dropdown
+  module](https://b-klaver.github.io/shinyWorkflows/modularization.html#dropdown-module)
+  to improve this domain select module by using the nesting approach.  
+- Convert to the mastering shiny format (ie. `shiny::NS(id, "ui_name")`,
+  as well as using a returned list in the server).  
+- Consider adding additional UI and server function arguments for the
+  dropdown lists for the dropdown module to make them more
+  generalizable.
+
+### 3) Building off of your previous shiny app, convert UI/server pairings into modules
+
+#### 3a) Use your `dropdown_module`
+
+For the two dropdown menus in your sidebar, implement a dropdown module
+that you can use for both of them (ie. one generalized module).
+
+#### 3b) Create plot functions and a `plot_module`
+
+If you haven’t yet, create functions for your plots and create a simple
+plot module to output them.
+
+#### 3c) Create table functions and a `table_module`
+
+If you haven’t yet, create functions for your tables and create a simple
+table module to output them.
+
+#### 3d) Create a `download_data` module
+
+Make a simple module to download data - or use the one from the
+[readings]((https://b-klaver.github.io/shinyWorkflows/modularization.html#csv-download-module)).
+Given we have a button that accompanies this, we could think about
+making a nested module here! Up to you.
+
+#### 3e) Find any other UI/server pairs that can be converted to modules
+
+If any more modularization opportunities exist in your app implement
+them with your knew knowledge!

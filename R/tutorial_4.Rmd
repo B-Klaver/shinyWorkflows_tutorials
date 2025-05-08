@@ -1,13 +1,7 @@
 ---
 title: "Shiny Workflows: Tutorial 4"
 output: 
-  html_document:
-    toc: false
-    toc_depth: 3
-    toc_float:
-      collapsed: false
-      smooth_scroll: false
-    code_folding: hide
+  github_document
 ---
 
 ```{r setup, include=FALSE}
