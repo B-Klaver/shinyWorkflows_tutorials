@@ -1,0 +1,35 @@
+Shiny Workflows: Tutorial 1
+================
+
+## Pre-readings
+
+- [Chapter 1: Git](https://b-klaver.github.io/shinyWorkflows/git.html)  
+- [Chapter 2: Package
+  Development](https://b-klaver.github.io/shinyWorkflows/package-development.html)
+
+## Assignment
+
+### 1) Create a practice project
+
+Create a project in your `U:/` drive that we can use throughout these
+tutorials. This project should include:
+
+#### 1a) Git
+
+- Initiate Git, make some test commits and get a feel for using git in a
+  project.  
+- Create a repository on Gitlab and link this project to that
+  repository.
+
+#### 1b) Package structure
+
+- Create a `DESCRIPTION` file
+- Create a practice script to test `devtools::load_all()`, as well as
+  roxygen2 documentation using `devtools::document()`
+- Feel free to continue to play around with other features discussed in
+  the package chapter
+
+### 2) Readings
+
+- [Chapter 3:
+  Shiny](https://b-klaver.github.io/shinyWorkflows/shiny.html)
